@@ -1,8 +1,10 @@
 import React from "react";
-import ReactDOM from "react-dom";
+import {createRoot} from "react-dom/client"
 import App from "./App.jsx";
 import "./index.css";
+import ProfilingTest from "./components/ProfilingTest/ProfilingTest";
 
-let element = <App />;
+let element = <ProfilingTest />;
 let container = document.getElementById("root")
-ReactDOM.render(element, container)
+const root = createRoot(container);
+root.render(element)

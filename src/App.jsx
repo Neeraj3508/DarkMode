@@ -1,16 +1,18 @@
 import React from 'react';
-import Body from "./components/Body";
-import Navbar from "./components/Navbar";
-import { DarkModeProvider } from "./components/DarkModeContext";
+import Body from "./components/Body/Body";
+import Navbar from "./components/Navbar/Navbar";
+import {DarkModeProvider} from "./components/Context/DarkModeContext";
 
 
 function App() {
     return (
         <DarkModeProvider>
-            <div className="app">
-                <Navbar />
-                <Body />
-            </div>
+            <React.StrictMode>
+                <div className="app">
+                    <Navbar/>
+                    <Body/>
+                </div>
+            </React.StrictMode>
         </DarkModeProvider>
     )
 }

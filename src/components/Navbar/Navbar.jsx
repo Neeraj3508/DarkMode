@@ -1,6 +1,6 @@
 import React, {useContext} from 'react';
 import "./Navbar.css";
-import {DarkModeContext} from "./DarkModeContext";
+import {DarkModeContext} from "../Context/DarkModeContext";
 
 function Navbar() {
     const [toggle, setToggle] = useContext(DarkModeContext);
